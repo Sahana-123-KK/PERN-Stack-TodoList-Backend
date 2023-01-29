@@ -19,6 +19,8 @@ app.post("/create", async (req, res) => {
         res.json(newPool.rows[0])
     } catch (error) {
         console.log(error)
+
+        
         return res.status(500).json("Server Error")
 
     }
